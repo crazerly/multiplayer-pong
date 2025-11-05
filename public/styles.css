@@ -1,0 +1,97 @@
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #0f1724; 
+    color: #e6eef8;
+}
+
+#lobby {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    color: inherit;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: white;
+}
+
+#sharelink {
+    color: rgba(255,255,255,0.6);
+}
+
+.hidden {
+    display: none;
+}
+
+#gameScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hud {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+canvas {
+    background: #071021; 
+    border-radius: 8px; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.touch-controls {
+    display: none;
+    width: 320px;
+    height: 400px;
+    position: relative;
+    margin-top: 12px;
+}
+
+.touch {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.half {
+    height: 50%;
+}
+
+@media (max-width:900px) {
+    canvas {
+        width: 90vw;
+        height: 67.5vw;
+    }
+    .hud {
+        width: 90vw;
+    }
+    .touch-controls {
+        display: block;
+    }
+}
